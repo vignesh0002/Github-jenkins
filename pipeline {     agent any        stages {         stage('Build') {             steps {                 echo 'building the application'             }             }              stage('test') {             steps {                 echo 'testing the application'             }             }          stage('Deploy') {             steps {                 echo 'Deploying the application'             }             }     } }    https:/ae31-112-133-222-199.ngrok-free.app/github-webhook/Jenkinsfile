@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+  
+    stages {
+        stage('Build') {
+            steps {
+                echo 'building the application'
+            }
+            }
+             stage('test') {
+            steps {
+                echo 'testing the application'
+            }
+            }
+         stage('Deploy') {
+            steps {
+                echo 'Deploying the application'
+            }
+            }
+    }
+}
+
+
+
+https://ae31-112-133-222-199.ngrok-free.app/github-webhook/
